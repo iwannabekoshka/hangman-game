@@ -25,7 +25,7 @@ function App() {
     const value = e.target.value;
 
     if (isOnlyLetters(value) || value === "") {
-      setWordToGuess(value);
+      setWordToGuess(value.toLowerCase());
     }
   }
 
